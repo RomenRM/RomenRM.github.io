@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.6.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.6.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.6.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.6.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.6.1/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+</head>
+
+<body>
+
+  <div id="registro">
+    <label for="Nombre">Correo electronico</label>
+    <input id="Nombre" type="text">
+    <label for="Pass">Contraseña</label>
+    <input id="Pass" type="password">
+    <button onclick = "registrar()">Registrar</button>
+    <br>
+
+    <p>En caso de tener ya una cuenta o querer usar otro metodo pulse el siguiente boton</p>
+    <button onclick = "registered()">Ya tengo una cuenta</button>
+  </div>
+
+  <br>  <br>
+
+  <div id="registrado" style="display: none;" >
+    <label for="Usuario">Correo electronico</label>
+    <input id="Usuario" type="text">
+    <label for="Cont">Contraseña</label>
+    <input id="Cont" type="password">
+    <button onclick = "acceder()">Acceder</button>
+  </div>
+  
+  <br>  <br>
+
+  <div id= "NoLog" style="display: none;">
+    <button onclick="googleLogin()">Login With Google</button>
+    <button onclick = "gitHubSignin()">GitHub Signin</button>
+    <button onclick = "facebookLogin()">Facebook Signin</button>
+    <button onclick = "crear()">Crear usuario</button>
+  </div>
+
+  <div id= "Logged" style="display: none;">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <p id="Info"></p>
+  <p id="saludo"></p>
+
+  <div id = "usuario" style="display: none;">
+    <div id="mapid" style="height: 500px;"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+  <script type="module" src="./js/script.js"></script>
+  <script src="./js/acceso.js"></script>
+</body>
+
+</html>
