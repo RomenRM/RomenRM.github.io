@@ -1,0 +1,40 @@
+.islasP{
+    width: 200px;
+    height: 100px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightyellow;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+#islasJugar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#trajesJugar{
+    background-color: yellow;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes{
+    width: 200px;
+    height: 150px;
+    align-items: flex;
+}
+
+#juego{
+    width: 1500px;
+    height: 700px;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
