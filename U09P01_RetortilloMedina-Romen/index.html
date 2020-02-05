@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <LINK REL=StyleSheet HREF="./css/style.css" TYPE="text/css" MEDIA=screen>
+    <LINK REL=StyleSheet HREF="./css/pagination.css" TYPE="text/css" MEDIA=screen>
+
+    <link type="text/css" href="./js/jquery-ui-1.11.4.custom/jquery-ui.structure.css" rel="Stylesheet"
+        id="linkestilo" />
+    <link type="text/css" href="./js/jquery-ui-1.11.4.custom/jquery-ui.theme.css" rel="Stylesheet" id="linkestilo" />
+    <link type="text/css" href="./js/jquery-ui-1.11.4.custom/jquery-ui.css" rel="Stylesheet" id="linkestilo" />
+</head>
+
+<body>
+    <p>Haga click en las imagenes para ver informacion</p>
+
+    <div id="spinC">
+        <p>Cargando los comics</p>
+        <img class="spiner" src="./img/91.gif" />
+    </div>
+    <h1>Comics</h1>
+    <label for="fComics">Filtre de los comics disponibles por nombre</label>
+    <input type="text" id="fComics">
+    <br /><br />
+    <div id="pagination"></div>
+    <div id="comics">
+
+
+    </div>
+
+    <br /><br /><br />
+
+    <div id="spinP">
+        <p>Cargando los personajes</p>
+        <img class="spiner" src="./img/91.gif" />
+    </div>
+    <h1>Personajes</h1>
+    <label for="fPersonajes">Filtre de los personajes disponibles por nombre</label>
+    <input type="text" id="fPersonajes">
+    <br /><br />
+    <div id="pagination2"></div>
+    <div id="personajes"></div>
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="./js/paginacion.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+
+</html>
